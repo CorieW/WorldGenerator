@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &786678958730399966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 786678958730399952}
+  - component: {fileID: 786678958730399953}
+  m_Layer: 0
+  m_Name: Temperate Forest Biome
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &786678958730399952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786678958730399966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.552096, y: -0.337917, z: -8.685547}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &786678958730399953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786678958730399966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aad9630b521aeb4c90c5ac50c9d7a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHeight: 1
+  minHeight: 0.6
+  maxTemp: 0.9
+  minTemp: 0.3
+  defaultBiomeLayer:
+    name: Default
+    maxHeight: 1
+    minHeight: 0
+    maxTemp: 1
+    minTemp: 0
+    groundTile: {fileID: 8418516770356457902, guid: 823c0f91cecf4ee4a8692dd04981e6bc,
+      type: 3}
+    featureGroups:
+    - name: Forest
+      mapColor: {r: 0.04232888, g: 0.6320754, b: 0, a: 1}
+      minAllowedNutrients: 0.58
+      maxAllowedNutrients: 1
+      spawnableFeatures:
+      - name: Tree
+        feature: {fileID: 3807225692297215914, guid: 9a9def624cbe0634cb193e4f0e987534,
+          type: 3}
+        spawnChance: 0.18199999630451202
+        spacing: {x: 1, y: 3}
+        randomOffset: 0
+      - name: Flower
+        feature: {fileID: 3793031098178727913, guid: d0f08ed1a59e84a4ab3bf2cc8c67d2f4,
+          type: 3}
+        spawnChance: 0.029999999329447746
+        spacing: {x: 1, y: 2}
+        randomOffset: 0
+      - name: Grass
+        feature: {fileID: 2743571015873002343, guid: 9820ae5457b428f439f330ab9a4b2439,
+          type: 3}
+        spawnChance: 0.07999999821186066
+        spacing: {x: 1, y: 2}
+        randomOffset: 0
+    - name: Odd Trees
+      mapColor: {r: 0.11372549, g: 0.78431374, b: 0.043137256, a: 1}
+      minAllowedNutrients: 0
+      maxAllowedNutrients: 12
+      spawnableFeatures:
+      - name: Tree
+        feature: {fileID: 3807225692297215914, guid: 9a9def624cbe0634cb193e4f0e987534,
+          type: 3}
+        spawnChance: 0.0005000000237487257
+        spacing: {x: 1, y: 2}
+        randomOffset: 0
+      - name: Flower
+        feature: {fileID: 3793031098178727913, guid: d0f08ed1a59e84a4ab3bf2cc8c67d2f4,
+          type: 3}
+        spawnChance: 0.029999999329447746
+        spacing: {x: 1, y: 2}
+        randomOffset: 0
+      - name: Grass
+        feature: {fileID: 2743571015873002343, guid: 9820ae5457b428f439f330ab9a4b2439,
+          type: 3}
+        spawnChance: 0.4000000059604645
+        spacing: {x: 1, y: 2}
+        randomOffset: 0
+  biomeLayers:
+  - name: Shallow Water
+    maxHeight: 0.61
+    minHeight: 0
+    maxTemp: 1
+    minTemp: 0
+    groundTile: {fileID: 1673004732470968121, guid: a454d31e76689fb41a77a7148b2d6af7,
+      type: 3}
+    featureGroups: []
+  - name: Beach
+    maxHeight: 0.615
+    minHeight: 0
+    maxTemp: 1
+    minTemp: 0
+    groundTile: {fileID: 6818239714043602070, guid: a9ca0f9f41206004c93f08938282b1ec,
+      type: 3}
+    featureGroups: []
+  - name: Mountain
+    maxHeight: 1
+    minHeight: 0.962
+    maxTemp: 1
+    minTemp: 0
+    groundTile: {fileID: 158654713563655969, guid: f5f68a11a25f7234b9479106cbfa5a0c,
+      type: 3}
+    featureGroups: []
